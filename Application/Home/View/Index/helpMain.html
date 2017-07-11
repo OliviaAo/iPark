@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<title>iPark | Web | help | helpMap</title>
+<include file="Public/header" />
+<style type="text/css">
+	body{
+
+		width:100%;
+		height:100%;
+		vertical-align: middle;
+		background-attachment:fixed;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-image: url("__PUBLIC__/Home/img/bgHelpMap.png");
+
+	}
+	.in{
+
+		width:100%;
+		height:100%;
+		float:left;
+		opacity: 0.9;
+		overflow:hidden;
+		text-align: center;
+		background-color: rgb(1,1,1);
+
+	}
+	.s{
+		width:100%;
+		height:40%;
+		float:left;
+		opacity: 0.9;
+		overflow:hidden;
+		text-align: center;
+		background-color: rgb(1,1,1);
+
+	}
+	#ins{
+
+		width:100%; 
+		height:100%;
+	}
+	h3{
+		color: white;
+	}
+	#ti{
+		
+		margin:10%;
+		text-align:center;
+		position:absolute;
+		font-style:'微软雅黑';
+	}
+	.gap{
+		margin-top:5%;
+		width:100%;
+	}
+
+	/* 响应式: */
+    /* 超小屏幕 (手机)*/
+    @media screen and (max-width: 767px){
+
+    	h3{
+    		font-size: 100%
+    		font-weight: 200;
+    	}
+
+    	#ins{
+
+			width:100%; 
+			height:40%;
+		}
+ 
+    }
+
+
+   /* 小屏幕（平板，大于等于 768px） */
+   @media screen and (min-width: 768px){ 
+
+   		h3{
+   			font-size: 100%
+    		font-weight: 200;
+    	}
+    	#ins{
+
+			width:100%; 
+			height:100%;
+		}
+		
+  
+   }
+   
+   /* 中等屏幕（桌面显示器，大于等于 992px） */
+   @media screen and (min-width:992px){
+
+   		h3{
+    		font-size: 150%
+    		font-weight: 200;
+    	}
+    	#ins{
+
+			width:100%; 
+			height:100%;
+		}
+    }
+   
+
+   /* 大屏幕（大桌面显示器，大于等于 1200px） */
+   @media screen and (min-width: 1200px){
+
+   		h3{
+   			font-size: 100%
+    		font-weight: 200;
+    	}
+    	#ins{
+
+			width:100%; 
+			height:100%;
+		}
+
+   }
+</style>
+<body>
+	<div>
+		<div class="gap">
+			<h3>主页面使用说明</h3>
+		</div>
+
+		<div class="gap"></div>
+
+		<div class="row">
+			<div class="col-xs-1 col-md-3 col-lg-3"></div>
+			<div class="col-xs-10 col-md-6 col-lg-6" >
+				<div class="in">
+					<h3>Step 1: </h3>
+					<img id="ins" src="__PUBLIC__/Home/img/help/helpMain/1.png" >
+				</div>
+			</div>
+			<div class="col-xs-1 col-md-3 col-lg-3"></div>
+		</div>	
+
+		<div class="gap"></div>
+
+		<div class="row">
+			<div class="col-xs-1 col-md-3 col-lg-3"></div>
+			<div class="col-xs-10 col-md-6 col-lg-6" >
+				<div class="in">
+					<h3>Step 2: </h3>
+					<img id="ins" src="__PUBLIC__/Home/img/help/helpMain/2.png" >
+				</div>
+			</div>
+			<div class="col-xs-1 col-md-3 col-lg-3"></div>
+		</div>	
+
+		<div class="gap"></div>
+
+		<div class="row">
+			<div class="col-xs-1 col-md-3 col-lg-3"></div>
+			<div class="col-xs-10 col-md-6 col-lg-6" >
+				<div class="s">
+					<h3>Step 3: </h3>
+					<img id="ins" src="__PUBLIC__/Home/img/help/helpMain/3.png" >
+				</div>
+			</div>
+			<div class="col-xs-1 col-md-3 col-lg-3"></div>
+		</div>	
+
+		<div class="gap"></div>
+		<div class="gap"></div>
+
+	</div>
+</body>
+</html>

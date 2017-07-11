@@ -1,0 +1,338 @@
+<html>
+
+<title>ParkingLot Information | Web </title>
+<include file="Public/header" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/search.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/ParkingLot.css">
+
+
+<body>
+
+ 
+	<!-- Head Section -->
+  <header>
+    	<div class="con">
+      		<!-- Title  -->
+      		<div id="tit" class="row">
+      			<div id="tit" class="col-xs-12 col-md-12 col-lg-12"></div>
+        		<div id="act" class="col-xs-12 col-md-12 col-lg-12">
+          			<h3 style=" color: antiquewhite; margin:0; text-align:center;"> Parking Information ~</h3>   
+        		</div>
+      		</div>
+      	</div>
+  </header>
+
+  <!-- Information Block -->
+  <div class="inf">
+    	<div class="row">
+
+        <div class="col-xs-12 col-md-12 col-lg-12" style="height:10%;"></div>
+    		<div class="col-md-1 col-lg-1" ></div>
+
+        <div id="t1"class="col-xs-12 col-md-4 col-lg-4">
+          <h4>Parking Lot Inf</h4>
+          <img src="__PUBLIC__/Home/img/car.png" >
+          <volist name="parks" id="park">
+          <h4 style="text-align:left;">ID: {$park['id']}</h4>
+          <h4 style="text-align:left;">Name: {$park['name']} </h4>
+          <h4 style="text-align:left;">Address: {$park['country']}{$park['province']}{$park['city']} {$park['district']}{$park['block']}{$park['community']}</h4>
+          <h4 style="text-align:left;">Distance: {$park['distance']} </h4>
+          <h4 style="text-align:left;">Price: {$park['price']}</h4>
+          </volist>
+        </div>
+
+        <div class="col-xs-2 col-md-2 col-lg-2"></div>
+
+        <div id="t2" class="col-xs-12 col-md-4 col-lg-4">
+          <h4>Parking Space Inf</h4>
+          <img src="__PUBLIC__/Home/img/Lot.png">
+          <h4 style="text-align:left;">Spaces: {$sp_info['spaces']}  </h4>
+          <h4 style="text-align:left;">Rest Spaces: {$sp_info['rest']} </h4>
+          <h4 style="text-align:left;">Order Status:  </h4>
+        </div>
+
+        <div class="col-md-1 col-lg-1"></div>
+    	</div>
+  </div>
+
+  <div class="show_Me">
+
+        <!-- Map Display Block  -->
+        <div class="showMap">
+          <div>
+            <div class="row">
+              <div class="col-xs-12 col-md-12 col-lg-12" style="height:10vh;"></div>
+              <div class="col-xs-12 col-md-12 col-lg-12">
+                <h4 id="sh3" style="text-align:center; font-size:250%;">Parking Lot Map Display</h4>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:20px;">
+            <div class="row">
+              <div class="col-xs-3 col-md-3 col-lg-3"></div>
+              <div id="sh4" class="map col-xs-6 col-md-6 col-lg-6">
+                <div class="po1" style="cursor:pointer;" onclick="isHidden('sh1','sh2','sh3','sh4')"></div>
+                <div class="po2" style="cursor:pointer;"></div>
+                <div class="po3" style="cursor:pointer;"></div>
+                <div class="po4" style="cursor:pointer;"></div>
+                <div class="po5" style="cursor:pointer;"></div>
+                <div class="po6" style="cursor:pointer;"></div>
+                <div class="po7" style="cursor:pointer;"></div>
+                <div class="po8" style="cursor:pointer;"></div>
+                <div class="po9" style="cursor:pointer;"></div>
+                <div class="po10"></div>
+           
+              </div>
+              <div class="col-xs-3 col-md-3 col-lg-3"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Real-Time Display Block  -->
+        <div class="showReal">
+          <div>
+            <div class="row">
+              <div class="col-xs-12 col-md-12 col-lg-12" style="height:10vh;"></div>
+              <div class="col-xs-12 col-md-12 col-lg-12">
+                <h4 id="sh1" style="text-align:center; font-size:250%; cursor:pointer"onclick="isHidden('sh3','sh4','sh1','sh2')">Space Real-Time Display</h4>
+              </div>
+            </div>
+          </div>
+
+          <div style=" margin-top:20px;">
+            <div class="row">
+              <div class="col-xs-3 col-md-3 col-lg-3"></div>
+              <div id="sh2" class="realTime col-xs-6 col-md-6 col-lg-6">
+
+              <div class="con1">
+                <!-- SpaceId:1~22  -->
+                <volist name="sp" id="vo" offset="0" length='22'>
+                   <div id="s{$vo['spid']}" class="space1 status-{$vo['spstatus']}" >
+                      <div style="padding-top:50%;font-size: 70%;">{$vo['spid']}</div>
+                    </div>
+                </volist>
+              </div>
+
+              <div class="con2"> 
+                <!-- SpaceId:88~95 -->
+                <volist name="sp" id="vo" offset="87" length='8'>
+                   <div id="s{$vo['spid']}" class="space2 status-{$vo['spstatus']}" >
+                      <div style="font-size: 70%;">{$vo['spid']}</div>
+                    </div>
+                </volist>
+              </div>
+              
+              <div class="con3">
+
+                <!-- SpaceId: 23~25 -->
+                <volist name="sp" id="vo" offset="22" length='3'>
+                  <div id="s{$vo['spid']}" class="space3 status-{$vo['spstatus']}" >
+                    <div style="padding-top:50%;font-size: 70%;">{$vo['spid']}</div>
+                  </div>
+                </volist>
+
+                <div class="gap1"></div>
+
+                <!-- SpaceId: 26~28- -->
+                <volist name="sp" id="vo" offset="25" length='3'>
+                  <div id="s{$vo['spid']}" class="space3 status-{$vo['spstatus']}" >
+                    <div style="padding-top:50%;font-size: 70%;">{$vo['spid']}</div>
+                  </div>
+                </volist>
+
+                <div class="gap1"></div>
+
+                <!-- SpaceId: 29~31-->
+                <volist name="sp" id="vo" offset="28" length='3'>
+                  <div id="s{$vo['spid']}" class="space3 status-{$vo['spstatus']}" >
+                    <div style="padding-top:50%;font-size: 70%;">{$vo['spid']}</div>
+                  </div>
+                </volist>
+
+
+                <div class="gap1"></div>
+
+                <!-- SpaceId: 32~35- -->
+                <volist name="sp" id="vo" offset="31" length='3'>
+                  <div id="s{$vo['spid']}" class="space3 status-{$vo['spstatus']}" >
+                    <div style="padding-top:50%;font-size: 70%;">{$vo['spid']}</div>
+                  </div>
+                </volist>
+
+                <div class="gap1"></div>
+
+                <!-- SpaceId: 35~38-->
+                <volist name="sp" id="vo" offset="34" length='4'>
+                  <div id="s{$vo['spid']}" class="space3 status-{$vo['spstatus']}" >
+                    <div style="padding-top:50%;font-size: 70%;">{$vo['spid']}</div>
+                  </div>
+                </volist>
+              </div>
+
+              <div class="con4">
+
+                <!-- SpaceId: 39~41-->
+                <volist name="sp" id="vo" offset="38" length='3'>
+                  <div id="s{$vo['spid']}" class="space3 status-{$vo['spstatus']}" >
+                    <div style="padding-top:50%;font-size: 70%;">{$vo['spid']}</div>
+                  </div>
+                </volist>
+
+                <div class="gap1"></div>
+              
+                <!-- SpaceId: 42~44- -->
+                <volist name="sp" id="vo" offset="41" length='3'>
+                  <div id="s{$vo['spid']}" class="space3 status-{$vo['spstatus']}" >
+                    <div style="padding-top:50%;font-size: 70%;">{$vo['spid']}</div>
+                  </div>
+                </volist>
+             
+                <div class="gap1"></div>
+
+                <!-- SpaceId: 45~47- -->
+                <volist name="sp" id="vo" offset="44" length='3'>
+                  <div id="s{$vo['spid']}" class="space3 status-{$vo['spstatus']}" >
+                    <div style="padding-top:50%;font-size: 70%;">{$vo['spid']}</div>
+                  </div>
+                </volist>
+
+                <div class="gap1"></div>
+
+                <!-- SpaceId: 48~50- -->
+                <volist name="sp" id="vo" offset="47" length='3'>
+                  <div id="s{$vo['spid']}" class="space3 status-{$vo['spstatus']}" >
+                    <div style="padding-top:50%;font-size: 70%;">{$vo['spid']}</div>
+                  </div>
+                </volist>
+             
+                <div class="gap1"></div>
+
+                <!-- SpaceId: 51~54-->
+                <volist name="sp" id="vo" offset="50" length='4'>
+                  <div id="s{$vo['spid']}" class="space3 status-{$vo['spstatus']}" >
+                    <div style="padding-top:50%;font-size: 70%;">{$vo['spid']}</div>
+                  </div>
+                </volist>
+              </div>
+
+              <div class="con5">
+
+                <!-- SpaceId: 55~60- -->
+                <volist name="sp" id="vo" offset="54" length='6'>
+                  <div id="s{$vo['spid']}" class="space5 status-{$vo['spstatus']}" >
+                    <div style="padding-top:50%;font-size: 70%;">{$vo['spid']}</div>
+                  </div>
+                </volist>
+
+                <div class="gap2
+
+                "></div>
+
+                <!-- SpaceId: 61~66- -->
+                <volist name="sp" id="vo" offset="60" length='6'>
+                  <div id="s{$vo['spid']}" class="space5 status-{$vo['spstatus']}" >
+                    <div style="padding-top:50%;font-size: 70%;">{$vo['spid']}</div>
+                  </div>
+                </volist>
+              </div>
+
+              <div class="con6">
+
+                <!-- SpaceId: 67~72-->
+                <volist name="sp" id="vo" offset="66" length='6'>
+                  <div id="s{$vo['spid']}" class="space5 status-{$vo['spstatus']}" >
+                    <div style="padding-top:50%;font-size: 70%;">{$vo['spid']}</div>
+                  </div>
+                </volist>
+             
+                <div class="gap2"></div>
+
+                <!-- SpaceId: 72~78- -->
+                <volist name="sp" id="vo" offset="72" length='6'>
+                  <div id="s{$vo['spid']}" class="space5 status-{$vo['spstatus']}" >
+                    <div style="padding-top:50%;font-size: 70%;">{$vo['spid']}</div>
+                  </div>
+                </volist>
+              </div>
+
+              <div class="con7">
+                
+                <!-- SpaceId: 96~98-->
+                <volist name="sp" id="vo" offset="95" length='3'>
+                  <div id="s{$vo['spid']}" class="space4 status-{$vo['spstatus']}" >
+                    <div style="font-size: 70%;">{$vo['spid']}</div>
+                  </div>
+                </volist>
+              </div>
+
+              <div class="con8">
+
+                <!-- SpaceId: 79~87 -->
+                <volist name="sp" id="vo" offset="78" length='9'>
+                  <div id="s{$vo['spid']}" class="space6 status-{$vo['spstatus']}" >
+                    <div style="padding-top:50%;font-size: 70%;">{$vo['spid']}</div>
+                  </div>
+                </volist>
+              </div>
+
+              <div class="con9">
+
+                <!-- SpaceId: 99~100- -->
+                <volist name="sp" id="vo" offset="98" length='2'>
+                  <div id="s{$vo['spid']}" class="space7 status-{$vo['spstatus']}" >
+                    <div style="font-size: 70%;">{$vo['spid']}</div>
+                  </div>
+                </volist>
+              </div>
+              </div>
+              <div class="col-xs-3 col-md-3 col-lg-3"></div>
+            </div>
+          </div>
+        </div>
+  </div> 
+
+  <div style="height:10%">
+  </div>
+
+
+  <script type="text/javascript">
+
+      function isHidden(oDiv1,oDiv2,oDiv3,oDiv4){
+        var vDiv1 = document.getElementById(oDiv1);
+        var vDiv2 = document.getElementById(oDiv2);
+        var vDiv3 = document.getElementById(oDiv3);
+        var vDiv4 = document.getElementById(oDiv4);
+        // vDiv1.style.display = (vDiv1.style.display == 'none')?'block':'none';
+        vDiv1.style.display = 'block';
+        vDiv2.style.display = 'block';
+        vDiv3.style.display = 'none';
+        vDiv4.style.display = 'none';
+       }
+
+       $(document).ready(function(){
+
+      var PL_ID = {$park['id']};
+      var interval_id = window.setInterval(function(){
+
+        for(var i = 1; i<=100; i++){
+          $.post("{:U('Home/Parkinglot/getStatus')}", {"PL_ID":PL_ID, "SP_ID":i }, function(result){
+            // alert(result);
+            var arr = result.split(";");
+            for(var j = 0; j<arr.length-1;j++){
+              var space = arr[j].split(",");
+              $('#s'+space[0]).removeClass("status-0 status-1").addClass(space[1]);
+            }
+
+          });
+        }
+
+      }, 2000);
+    });
+  </script>
+
+</body>
+</html>
+
+      
+       

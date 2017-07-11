@@ -1,0 +1,870 @@
+
+
+/*  Space  */
+.space1{
+	float:left;
+	background-color:rgb(230, 150,150);
+}
+.space2{ 
+	background-color:rgb(230, 150,150); 
+}
+.space3{
+	float:left;
+	background-color:rgb(230, 150,150);
+}
+.space4{ 
+	background-color:rgb(230, 150,150); 
+}
+.space5{
+	float:left;
+	background-color:rgb(230, 150,150);
+}
+.space6{
+	float:left;
+	background-color:rgb(230, 150,150);
+}
+.space7{ 
+	background-color:rgb(230, 150,150); 
+}
+
+/*  Position  */
+.po1{  position:absolute; }
+.po2{  position:absolute; }
+.po3{  position:absolute; }
+.po4{  position:absolute; }
+.po5{  position:absolute; }
+.po6{  position:absolute; }
+.po7{  position:absolute; }
+.po8{  position:absolute; }
+.po9{  position:absolute; }
+.po10{ position:absolute; }
+
+/*  Configuration  */
+.con1{ position:absolute; }
+.con2{ position:absolute; }
+.con3{ position:absolute; }
+.con4{ position:absolute; }
+.con5{ position:absolute; }
+.con6{ position:absolute; }
+.con7{ position:absolute; }
+.con8{ position:absolute; }
+.con9{ position:absolute; }
+
+/*  Gap  */
+.gap1{
+    float:left;
+	position:relative;
+}
+.gap2{
+    float:left;
+	position:relative;
+}
+
+/*  Status  */
+.status-0{ background-color:rgb(140,230,150); }
+.status-1{ background-color:rgb(230,150,150); }
+
+/*  Show  */
+
+#sh1{ display:none; }
+#sh2{ display:none; }
+#sh3{ display:block; }
+#sh4{ display:block; }
+.show_Me{ position:relative;}
+.showMap{ position:absolute; }
+.showRealTime{ position:absolute; }
+
+
+ /* 响应式: */
+ /*超小屏幕 (手机)*/
+    @media screen and (max-width: 767px){
+
+    	
+   		.space1{
+		    width: 3.3%;
+    		height: 93%;
+    		margin-left: 1.05%;
+		}
+
+		.space2{
+    		width: 54%;
+    		height: 5.6%;
+    		margin-top: 6.5%;
+    	}
+
+    	.space3{
+    		width:3.5%;
+			height:60%;
+			margin-left:1%;
+    	}
+
+    	.space4{
+    		width: 52%;
+    		height: 22%;
+    		margin-top: 8.5%;
+    	}
+
+    	.space5{
+    		width: 5.3%;
+   			height: 49%;
+    		margin-left: 1.7%;
+    	}
+
+    	.space6{
+    		width:8.5%;
+			height:70%;
+			margin-left:2%;
+    	}
+
+    	.space7{
+    		width: 52%;
+    		height: 40%;
+    		margin-top: 8.5%;
+    	}
+
+    	.po1{
+    	    width: 30%;
+    		height: 40%;
+   		 	margin-top: 9%;
+    		margin-left: 6%;
+		}
+
+		.po2{
+    	    width: 12%;
+    		height: 40%;
+    		margin-top: 9%;
+   		 	margin-left: 40%;
+		}
+
+		.po3{
+    	    width: 20%;
+		    height: 40%;
+		    margin-top: 9%;
+		    margin-left: 52%;
+		}
+
+		.po4{
+    	    width: 18%;
+		    height: 40%;
+		    margin-top: 9%;
+		    margin-left: 73%;
+		}
+
+		.po5{
+    	    width: 9%;
+    		height: 40%;
+    		margin-top: 30%;
+    		margin-left: 4%;
+		}
+
+		.po6{
+    	    width: 9%;
+		    height: 40%;
+		    margin-top: 30%;
+		    margin-left: 14%;
+		}
+
+		.po7{
+    	    width: 9%;
+		    height: 40%;
+		    margin-top: 30%;
+		    margin-left: 24%;
+		}
+
+		.po8{
+    	    width: 30%;
+		    height: 40%;
+		    margin-top: 30%;
+		    margin-left: 36%;
+		}
+
+		.po9{
+			width: 9%;
+		    height: 40%;
+		    margin-top: 30%;
+		    margin-left: 68%;
+		}
+
+		.po10{
+			width: 13%;
+    		height: 40%;
+    		margin-top: 30%;
+   		 	margin-left: 78%;
+		}
+
+    	.con1{
+    		width: 70%;
+    		height: 7%;
+    		margin-top: 11%;
+    		margin-left: 24%;
+		}
+
+		.con2{
+			width:10.5%;
+    		height:60%;
+    		margin-top:16.2%;
+			margin-left:17.8%; 
+		}
+
+		.con3{
+			width:70%;
+			height:12%;
+			margin-top:20%;
+			margin-left:27%;
+		}
+
+		.con4{
+			width:70%;
+			height:12%;
+			margin-top:27%;
+			margin-left:27%;
+		}
+
+		.con5{
+		    width: 46%;
+		    height: 14%;
+		    margin-top: 34%;
+    		margin-left: 27%;
+		}
+
+		.con6{
+			width: 46%;
+		    height: 14%;
+			margin-top: 41%;
+    		margin-left: 27%;
+		}
+
+		.con7{
+			width:10%;
+    		height:15%;
+			margin-top:36.8%;
+			margin-left:74.7%;
+		}
+
+		.con8{
+		    width: 30%;
+		    height: 10%;	
+		    margin-top: 52.4%;
+    		margin-left: 33.5%;
+		}
+
+		.con9{
+			width: 10%;
+		    height: 8%;	
+		    margin-top: 50%;
+    		margin-left: 65%;
+		}
+
+		.gap1{
+			width:5%;
+    		height:50%;
+		}
+
+		.gap2{
+			width:9%;
+    		height:50%;
+		}
+    }
+
+
+   /* 小屏幕（平板，大于等于 768px）*/ 
+   @media screen and (min-width: 768px){ 
+
+   		.space1{
+			width: 3.5%;
+		    height: 41.5%;
+		    margin-left: 0.9%;
+		}
+
+		.space2{
+    		width: 82%;
+		    height: 9%;
+		    margin-top: 13%;
+    	}
+
+    	.space3{
+    		width:4%;
+			height:83%;
+			margin-left:1.05%;
+    	}
+
+    	.space4{
+    		width: 49%;
+    		height: 18%;
+    		margin-top: 6.5%;
+    	}
+
+    	.space5{
+    	    width: 5.5%;
+    		height: 54%;
+   			margin-top: 1.1%;
+   			margin-left: 1.6%;
+    	}
+
+    	.space6{
+    		width:8.5%;
+			height:64%;
+			margin-left:2%;
+    	}
+
+    	.space7{
+    		width: 63%;
+    		height: 26%;
+    		margin-top: 11.5%;
+    	}
+
+    	.po1{
+    	    width: 30%;
+    		height: 25%;
+   		 	margin-top: 9%;
+    		margin-left: 6%;
+		}
+
+		.po2{
+    	    width: 12%;
+    		height: 25%;
+    		margin-top: 9%;
+   		 	margin-left: 39%;
+		}
+
+		.po3{
+    	    width: 20%;
+		    height: 25%;
+		    margin-top: 9%;
+		    margin-left: 51%;
+		}
+
+		.po4{
+    	    width: 18%;
+		    height: 25%;
+		    margin-top: 9%;
+		    margin-left: 72%;
+		}
+
+		.po5{
+    	    width: 9%;
+    		height: 25%;
+    		margin-top: 30%;
+    		margin-left: 3%;
+		}
+
+		.po6{
+    	    width: 9%;
+		    height: 25%;
+		    margin-top: 30%;
+		    margin-left: 13%;
+		}
+
+		.po7{
+    	    width: 9%;
+		    height: 25%;
+		    margin-top: 30%;
+		    margin-left: 23%;
+		}
+
+		.po8{
+    	    width: 30%;
+		    height: 25%;
+		    margin-top: 30%;
+		    margin-left: 35%;
+		}
+
+		.po9{
+			width: 9%;
+		    height: 25%;
+		    margin-top: 30%;
+		    margin-left: 67%;
+		}
+
+		.po10{
+			width: 13%;
+    		height: 25%;
+    		margin-top: 30%;
+   		 	margin-left: 77%;
+		}
+
+    	.con1{
+    	    width: 70%;
+		    height: 4%;
+		    margin-top: 11%;
+		    margin-left: 23%;
+		}
+
+		.con2{
+			width:5%;
+    		height:10%;
+    		margin-top:17%;
+			margin-left:17.5%; 
+		}
+
+		.con3{
+			width: 64%;
+		    height: 2%;
+		    margin-top: 20%;
+		    margin-left: 27%;
+		}
+
+		.con4{
+		    width: 64%;
+		    height: 2%;
+		    margin-top: 26%;
+		    margin-left: 27%;
+		}
+
+		.con5{
+			width: 46%;
+    		height: 3%;
+    		margin-top: 35%;
+    		margin-left: 27%;
+		}
+
+		.con6{
+			width: 46%;
+		    height: 3%;
+		    margin-top: 41%;
+		    margin-left: 27%;
+		}
+
+		.con7{
+			width:10%;
+    		height:5%;
+			margin-top:37%;
+			margin-left:74%;
+		}
+
+		.con8{
+		    width: 31%;
+		    height: 3%;
+		    margin-top: 51.5%;
+		    margin-left: 33%;
+		}
+
+		.con9{
+			width: 8%;
+		    height: 4%;
+		    margin-top: 48.5%;
+		    margin-left: 64%;
+		}
+
+		.gap1{
+			width:4%;
+    		height:5%;
+		}
+
+		.gap2{
+			width:7%;
+    		height:50%;
+		}
+
+		.showMap{
+			width: 70%;
+    		height: 70%;
+    		margin-left: 15%;
+		}
+   }
+   
+   /* 中等屏幕（桌面显示器，大于等于 992px）*/
+   @media screen and (min-width:992px){
+
+   		.space1{
+		    width: 3.3%;
+    		height: 78%;
+    		margin-left: 1.05%;
+		}
+
+		.space2{
+    		width: 85%;
+		    height: 10%;
+		    margin-top: 12.5%;
+    	}
+
+    	.space3{
+    		width:3.5%;
+			height:60%;
+			margin-left:1%;
+    	}
+
+    	.space4{
+    		width: 51%;
+    		height: 19%;
+   			margin-top: 9.5%;
+    	}
+
+    	.space5{
+    		width: 5.3%;
+   			height: 49%;
+    		margin-left: 1.7%;
+    	}
+
+    	.space6{
+    		width:8.5%;
+			height:70%;
+			margin-left:2.1%;
+    	}
+
+    	.space7{
+    		width: 53%;
+		    height: 35%;
+		    margin-top: 10%;
+    	}
+
+    	.po1{
+    	    width: 30%;
+    		height: 40%;
+   		 	margin-top: 9%;
+    		margin-left: 6%;
+		}
+
+		.po2{
+    	    width: 12%;
+    		height: 40%;
+    		margin-top: 9%;
+   		 	margin-left: 40%;
+		}
+
+		.po3{
+    	    width: 20%;
+		    height: 40%;
+		    margin-top: 9%;
+		    margin-left: 52%;
+		}
+
+		.po4{
+    	    width: 18%;
+		    height: 40%;
+		    margin-top: 9%;
+		    margin-left: 73%;
+		}
+
+		.po5{
+    	    width: 9%;
+    		height: 40%;
+    		margin-top: 30%;
+    		margin-left: 4%;
+		}
+
+		.po6{
+    	    width: 9%;
+		    height: 40%;
+		    margin-top: 30%;
+		    margin-left: 14%;
+		}
+
+		.po7{
+    	    width: 9%;
+		    height: 40%;
+		    margin-top: 30%;
+		    margin-left: 24%;
+		}
+
+		.po8{
+    	    width: 30%;
+		    height: 40%;
+		    margin-top: 30%;
+		    margin-left: 36%;
+		}
+
+		.po9{
+			width: 9%;
+		    height: 40%;
+		    margin-top: 30%;
+		    margin-left: 68%;
+		}
+
+		.po10{
+			width: 13%;
+    		height: 40%;
+    		margin-top: 30%;
+   		 	margin-left: 78%;
+		}
+
+    	.con1{
+    		width: 70%;
+    		height: 7%;
+    		margin-top: 11%;
+    		margin-left: 23%;
+    	}
+   
+   		.con2{
+			width: 6%;
+		    height: 25%;
+		    margin-top: 17%;
+		    margin-left: 17.2%;
+		}
+
+		.con3{
+			width:70%;
+			height:10%;
+			margin-top:20%;
+			margin-left:26%;
+		}
+
+		.con4{
+			width:70%;
+			height:10%;
+			margin-top:27%;
+			margin-left:26%;
+		}
+
+		.con5{
+		    width: 46%;
+		    height: 12%;
+		    margin-top: 34%;
+    		margin-left: 26%;
+		}
+
+		.con6{
+			width: 46%;
+		    height: 12%;
+			margin-top: 41%;
+    		margin-left: 26%;
+		}
+
+		.con7{
+			width:10%;
+    		height:15%;
+			margin-top:36%;
+			margin-left:74.3%;
+		}
+
+		.con8{
+		    width: 30%;
+		    height: 8%;
+		    margin-top: 52.4%;
+		    margin-left: 32.5%;
+		}
+
+		.con9{
+			width: 9%;
+		    height: 8%;
+		    margin-top: 48%;
+		    margin-left: 64.9%;
+		}
+
+		.gap1{
+			width:4.5%;
+    		height:50%;
+		}
+
+		.gap2{
+			width:9%;
+    		height:50%;
+		}
+    }
+   
+
+   /* 大屏幕（大桌面显示器，大于等于 1200px） */
+   @media screen and (min-width: 1200px){
+
+   		.space1{
+		    width: 3.3%;
+    		height: 93%;
+    		margin-left: 1.05%;
+		}
+
+		.space2{
+    		width: 54%;
+    		height: 5.6%;
+    		margin-top: 6.5%;
+    	}
+
+    	.space3{
+    		width:3.5%;
+			height:60%;
+			margin-left:1%;
+    	}
+
+    	.space4{
+    		width: 52%;
+    		height: 22%;
+    		margin-top: 8.5%;
+    	}
+
+    	.space5{
+    		width: 5.3%;
+   			height: 49%;
+    		margin-left: 1.7%;
+    	}
+
+    	.space6{
+    		width:8.5%;
+			height:70%;
+			margin-left:2%;
+
+    	}
+
+    	.space7{
+    		width: 52%;
+    		height: 40%;
+    		margin-top: 8.5%;
+    	}
+
+    	.po1{
+    	    width: 30%;
+    		height: 22%;
+   		 	margin-top: 9%;
+    		margin-left: 6%;
+		}
+
+		.po2{
+    	    width: 12%;
+    		height: 22%;
+    		margin-top: 9%;
+   		 	margin-left: 40%;
+		}
+
+		.po3{
+    	    width: 20%;
+		    height: 22%;
+		    margin-top: 9%;
+		    margin-left: 52%;
+		}
+
+		.po4{
+    	    width: 18%;
+		    height: 22%;
+		    margin-top: 9%;
+		    margin-left: 73%;
+		}
+
+		.po5{
+    	    width: 9%;
+    		height: 22%;
+    		margin-top: 30%;
+    		margin-left: 4%;
+		}
+
+		.po6{
+    	    width: 9%;
+		    height: 22%;
+		    margin-top: 30%;
+		    margin-left: 14%;
+		}
+
+		.po7{
+    	    width: 9%;
+		    height: 22%;
+		    margin-top: 30%;
+		    margin-left: 24%;
+		}
+
+		.po8{
+    	    width: 30%;
+		    height: 22%;
+		    margin-top: 30%;
+		    margin-left: 36%;
+		}
+
+		.po9{
+			width: 9%;
+		    height: 22%;
+		    margin-top: 30%;
+		    margin-left: 68%;
+		}
+
+		.po10{
+			width: 13%;
+    		height: 22%;
+    		margin-top: 30%;
+   		 	margin-left: 78%;
+		}
+
+    	.con1{
+    		width: 70%;
+    		height: 7%;
+    		margin-top: 11%;
+    		margin-left: 24%;
+		}
+
+		.con2{
+			width:10.5%;
+    		height:60%;
+    		margin-top:16.2%;
+			margin-left:17.8%; 
+		}
+
+		.con3{
+			width:70%;
+			height:12%;
+			margin-top:20%;
+			margin-left:27%;
+		}
+
+		.con4{
+			width:70%;
+			height:12%;
+			margin-top:27%;
+			margin-left:27%;
+		}
+
+		.con5{
+		    width: 46%;
+		    height: 14%;
+		    margin-top: 34%;
+    		margin-left: 27%;
+		}
+
+		.con6{
+			width: 46%;
+		    height: 14%;
+			margin-top: 41%;
+    		margin-left: 27%;
+		}
+
+		.con7{
+			width:10%;
+    		height:15%;
+			margin-top:36.8%;
+			margin-left:74.7%;
+		}
+
+		.con8{
+		    width: 30%;
+		    height: 10%;	
+		    margin-top: 52.4%;
+    		margin-left: 33.5%;
+		}
+
+		.con9{
+			width: 10%;
+		    height: 8%;	
+		    margin-top: 50%;
+    		margin-left: 65%;
+		}
+
+		.gap1{
+			width:5%;
+    		height:50%;
+		}
+		
+		.gap2{
+			width:7%;
+    		height:50%;
+		}
+
+		.showMap{
+			width: 70%;
+    		height: 70%;
+    		margin-left: 12%;
+		}
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

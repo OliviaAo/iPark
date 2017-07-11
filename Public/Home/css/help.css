@@ -1,0 +1,225 @@
+	body, html{
+			width: 100%;
+			height:100%;
+			position:relative;
+			font-family:fantasy;
+		}
+		a{ 
+			float:left; 
+			cursor:pointer;
+		}
+		p{ white-space:pre-wrap; }
+
+		#ti{
+			width:100%;
+			height:80%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			background-image: url("../img/bghelp.jpg");
+			color: white;
+			
+		}
+
+		#fon{
+			margin-bottom: 0;
+			position:absolute;
+		}
+
+		#ill{
+			margin-top:5%;
+			height:20%;
+		}
+
+		@-webkit-keyframes greenPulse {
+		    from {
+		        background-color: #749a02;
+		        -webkit-box-shadow: 0 0 9px #333;
+		    }
+
+		    50% {
+		        background-color: #91bd09;
+		        -webkit-box-shadow: 0 0 18px #91bd09;
+		    }
+
+		    to {
+		        background-color: #749a02;
+		        -webkit-box-shadow: 0 0 9px #333;
+		    }
+		}
+
+		@-webkit-keyframes magentaPulse {
+		    from {
+		        background-color: #630030;
+		        -webkit-box-shadow: 0 0 9px #333;
+		    }
+
+		    50% {
+		        background-color: #a9014b;
+		        -webkit-box-shadow: 0 0 18px #a9014b;
+		    }
+
+		    to {
+		        background-color: #630030;
+		        -webkit-box-shadow: 0 0 9px #333;
+		    }
+		}
+
+		@-webkit-keyframes orangePulse {
+		    from {
+		        background-color: #d45500;
+		        -webkit-box-shadow: 0 0 9px #333;
+		    }
+
+		    50% {
+		        background-color: #ff5c00;
+		        -webkit-box-shadow: 0 0 18px #ff5c00;
+		    }
+
+		    to {
+		        background-color: #d45500;
+		        -webkit-box-shadow: 0 0 9px #333;
+		    }
+		}
+		.magenta.button {
+		    -webkit-animation-name: magentaPulse;
+		    -webkit-animation-duration: 2s;
+		}
+		.green.button{
+			-webkit-animation-name: greenPulse;
+    		-webkit-animation-duration: 2s;
+		}
+		.orange.button {
+		    -webkit-animation-name: orangePulse;
+		    -webkit-animation-duration: 2s;
+		}
+		a.button{
+		
+			color: white;
+			line-height: normal;
+			border-radius: 10px;
+			
+			text-align: center;
+			text-decoration: none;
+			white-space:nowrap;          /*设置是否换行*/
+
+			font-weight: bold;
+			font-family: inherit;
+		   
+		    cursor:pointer;
+		    position: relative;
+		    display: block;
+		   
+		    box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset !important;
+		    -moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset;
+
+		    transition-property: background-color;
+		    transition-duration: 300ms;
+		    transition-timing-function: ease-out;
+		    transition-delay: initial;   
+
+		    -webkit-animation-duration: 1s;
+		    -webkit-animation-iteration-count: infinite;
+		}
+
+		/*.fst{ background-color: #630030; }
+		.sec{ background-color: #749a02; }
+		.thr{ background-color: #d45500; }*/
+
+	/* 响应式: */
+    /* 超小屏幕 (手机)*/
+    @media screen and (max-width: 767px){
+
+    	#ti{
+    		width:100%;
+			height:60%;
+    	}
+
+    	#fon{
+			margin-left: 50%;
+			margin-top:34%;
+			font-size:120%;
+			
+		}
+		h3{
+			margin-top: 5%;
+			margin-bottom: 0;
+			font-weight: 900;
+		}
+		#ill{
+			margin-top:15%;
+			height:20%;
+		}
+     
+    }
+
+
+   /* 小屏幕（平板，大于等于 768px） */
+   @media screen and (min-width: 768px){ 
+
+   		#ti{
+    		width:100%;
+			height:50%;
+    	}
+
+    	#fon{
+			margin-left: 58%;
+   			margin-top: 28%;
+    		font-size: 200%;	
+		}
+		h3{
+			margin-top: 8%;
+			margin-bottom: 0;
+			font-weight: 900;
+		}
+		#ill{
+			margin-top:15%;
+			height:20%;
+		}
+   }
+   
+   /* 中等屏幕（桌面显示器，大于等于 992px） */
+   @media screen and (min-width:992px){
+
+   		#ti{
+    		width:100%;
+			height:70%;
+    	}
+
+    	#fon{
+			margin-left: 70%;
+			margin-top:10%;
+			font-size:140%;
+		}
+		h3{
+			margin-top: 8%;
+			margin-bottom: 0;
+			font-weight: 900;
+		}
+
+    }
+   
+
+   /* 大屏幕（大桌面显示器，大于等于 1200px） */
+   @media screen and (min-width: 1200px){
+
+   		#ti{
+    		width:100%;
+			height:70%;
+    	}
+
+    	#fon{
+			position:absolute;
+			margin-left: 60%;
+			margin-top:6%;
+			font-size:140%;	
+		}
+
+		h3{
+			margin-top: 8%;
+			margin-bottom: 0;
+			font-weight: 800;
+		}
+   }
+
+      

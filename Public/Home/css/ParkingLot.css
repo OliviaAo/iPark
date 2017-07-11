@@ -1,0 +1,390 @@
+ body{
+
+        text-align: center;
+        position:relative;
+     }
+     
+     .con{
+        width:100%;
+        
+        text-align: center;
+        position:relative;
+        vertical-align: middle;
+        background-size: cover;
+        background-image: url("../img/bg3.jpeg");
+        background-repeat: no-repeat;
+        background-attachment:scroll;
+        background-size: 100% 85%;
+        -webkit-background-size:100% 85%;
+        -o-background-size:100% 85%; 
+        height: -webkit-calc(80vh - 160px);
+        height: -moz-calc(80vh - 160px);
+        height: -o-calc(80vh-160px); /* Opera */
+        height: 80vh;
+      }
+
+      .he{
+        position:relative;
+        filter:alpha(opacity=70); /* IE滤镜，透明度50% */
+        -moz-opacity:0.7;         /* Firefox私有，透明度50% */
+        opacity:0.7;              /* 其他，透明度50% */
+      }
+
+      .inf{
+        background-color: rgba(25,59,108,0.1);
+        text-align:center;
+      }
+
+      .t{
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.6);
+      }
+
+      .realTime{
+          height: 80vh;
+          /*float:left;*/
+          position:relative;
+          display:none;
+          background-size: 100% auto; 
+          background-repeat: no-repeat;
+          background-image: url("../img/parking.png");
+      }
+
+      .map{
+          height: 100vh;
+          height: -webkit-calc(100vh - 160px);
+          height: -moz-calc(100vh - 160px);
+          height: -o-calc(100vh-160px); /* Opera */
+          /*float:left;*/
+          position:relative;
+          background-size: 100% auto; 
+          background-repeat: no-repeat;
+          background-image: url("../img/mapP.png");
+      }
+
+      #t1{ 
+        background: rgba(255,255,255,.8)
+      }
+      #t2{ 
+        background: rgba(255,255,255,.8)
+      }
+
+
+      #text{
+        margin-top: 5%;
+        position:relative;
+        width:100%;
+      }
+
+      #foot{
+        position:relative;
+        width:100%;
+        background-color: rgb(114,208,235);
+      }
+
+
+      li{
+        margin-top: 1%;
+        list-style-type:none; 
+        cursor:pointer; 
+        text-align:center; 
+      }
+
+      #tit{
+        height: -webkit-calc(20vh - 160px);
+        height: -moz-calc(20vh - 160px);
+        height: -o-calc(20vh-160px); /* Opera */
+        height: 20vh;
+      }
+
+      #act{
+        animation:myfirst 0.6s;
+        -moz-animation:myfirst 0.6s;    /* Firefox */
+        -webkit-animation:myfirst 0.6s; /* Safari and Chrome */
+        -o-animation:myfirst 0.6s;      /* Opera */
+      }
+
+      @keyframes myfirst
+      {
+        0%   {opacity: 0;}
+        25%  {opacity: 0.25;}
+        50%  {opacity: 0.5;}
+        75%  {opacity: 0.75;}
+        100% {opacity: 1;}
+      }      
+
+      @-moz-keyframes myfirst /* Firefox */
+      {
+         0%  {opacity: 0;}
+        25%  {opacity: 0.25;}
+        50%  {opacity: 0.5;}
+        75%  {opacity: 0.75;}
+        100% {opacity: 1;}
+      }      
+
+      @-webkit-keyframes myfirst /* Safari and Chrome */
+      {
+         0%   {opacity: 0;}
+        25%  {opacity: 0.25;}
+        50%  {opacity: 0.5;}
+        75%  {opacity: 0.75;}
+        100% {opacity: 1;}
+      }      
+
+      @-o-keyframes myfirst /* Opera */
+      {
+        0%   {opacity: 0;}
+        25%  {opacity: 0.25;}
+        50%  {opacity: 0.5;}
+        75%  {opacity: 0.75;}
+        100% {opacity: 1;}
+      }
+
+    /* 响应式: */
+    /* 超小屏幕 (手机)*/
+    @media screen and (max-width: 767px){
+
+      h1{ 
+        font-size:320%; 
+        padding-top:25%; 
+      }
+
+      h3{
+        font-size:150%;
+        font-weight:200;
+      }
+
+      .con{
+        height:40vh;
+        height:-webkit-calc(40vh - 160px);
+        height: -moz-calc(40vh - 160px);
+        height: calc(40vh - 160px);
+        min-height: 250px
+      }
+
+      .inf{
+         height:40vh;
+         height:-webkit-calc(40vh - 160px);
+         height: -moz-calc(40vh - 160px);
+         height: calc(40vh - 160px);
+         min-height: 250px
+      }
+
+      #t1{ 
+          height:70vh;
+          height:-webkit-calc(100vh - 160px);
+          height: -moz-calc(100vh - 160px);
+          height: calc(100vh - 160px);
+       }
+      #t2{ 
+          height:70vh;
+          height:-webkit-calc(100vh - 160px);
+          height: -moz-calc(100vh - 160px);
+          height: calc(100vh - 160px);
+       }
+
+
+      #se.row{ padding-top:8%; } 
+      #in.row{ padding-top:6%; }
+
+      #foot{   
+
+        height:220px; 
+        margin-top: 15%;   
+      }
+
+      #text{
+        font-size: 10px;
+        height:150px;
+      } 
+
+      .map{
+          height: 30vh;
+          height: -webkit-calc(30vh - 160px);
+          height: -moz-calc(30vh - 160px);
+          height: -o-calc(30vh-160px); /* Opera */
+          position:relative;
+          background-size: 100% auto; 
+          background-repeat: no-repeat;
+          background-image: url("../img/mapP.png");
+      }
+    }
+
+
+   /* 小屏幕（平板，大于等于 768px） */
+   @media screen and (min-width: 768px){ 
+
+      h1{ 
+        font-size:450%; 
+        padding-top:10%;
+      }
+
+      h3{
+        font-size:150%;
+        font-weight:200;
+      }
+
+      .con{
+        height:50vh;
+        height:-webkit-calc(50vh - 160px);
+        height: -moz-calc(50vh - 160px);
+        height: calc(50vh - 160px);
+        min-height: calc(50vh - 160px);
+      }
+
+      .inf{
+
+        height:45vh;
+        height:-webkit-calc(45vh - 160px);
+        height: -moz-calc(45vh - 160px);
+        height: calc(45vh - 160px);
+        min-height: calc(45vh - 160px);
+      }
+
+      #t1{ 
+          height:25vh;
+          height:-webkit-calc(25vh - 160px);
+          height: -moz-calc(25vh - 160px);
+          height: calc(25vh - 160px);
+       }
+      #t2{ 
+          height:25vh;
+          height:-webkit-calc(25vh - 160px);
+          height: -moz-calc(25vh - 160px);
+          height: calc(25vh - 160px);
+       }
+
+      #se.row{  padding-top:5%; }
+      #in.row{  padding-top:6%; }
+      #text{    height:200px;   }
+      #foot{    height:270px;    }
+
+      .map{
+          height: 30vh;
+          height: -webkit-calc(30vh - 160px);
+          height: -moz-calc(30vh - 160px);
+          height: -o-calc(30vh-160px); /* Opera */
+          position:relative;
+          background-size: 100% auto; 
+          background-repeat: no-repeat;
+          background-image: url("../img/mapP.png");
+      }
+   }
+   
+   /* 中等屏幕（桌面显示器，大于等于 992px） */
+   @media screen and (min-width:992px){
+
+      h1{ 
+        font-size:600%; 
+      }
+
+      h3{
+        font-size:250%;
+        font-weight:200;
+      }
+
+      .con{
+        height:60vh;
+        height:-webkit-calc(60vh - 160px);
+        height: -moz-calc(60vh - 160px);
+        height: calc(60vh - 160px);
+        min-height: calc(60vh - 160px);
+      }
+
+      .inf{
+        height:60vh;
+        height:-webkit-calc(60vh - 160px);
+        height: -moz-calc(60vh - 160px);
+        height: calc(60vh - 160px);
+        min-height: calc(60vh - 160px);
+      }
+
+      #t1{ 
+          height:60vh;
+          height:-webkit-calc(70vh - 160px);
+          height: -moz-calc(70vh - 160px);
+          height: calc(70vh - 160px);
+       }
+      #t2{ 
+          height:60vh;
+          height:-webkit-calc(70vh - 160px);
+          height: -moz-calc(70vh - 160px);
+          height: calc(70vh - 160px);
+       }
+
+      #se.row{ padding-top:5%; }
+      #in.row{ padding-top:6%; }
+      #text{   height:200px;   }
+      #foot{   height:110px;    }
+
+      .map{
+          height: 70vh;
+          height: -webkit-calc(70vh - 160px);
+          height: -moz-calc(70vh - 160px);
+          height: -o-calc(70vh-160px); /* Opera */
+          position:relative;
+          background-size: 100% auto; 
+          background-repeat: no-repeat;
+          background-image: url("../img/mapP.png");
+      }
+    }
+   
+
+   /* 大屏幕（大桌面显示器，大于等于 1200px） */
+   @media screen and (min-width: 1200px){
+
+      h1{ font-size:900%; }
+
+      h3{
+        
+        font-size:450%;
+        font-weight:200;
+      }
+      .con{
+        height:100vh;
+        height:(110vh - 160px);
+        height:-webkit-calc(110vh - 160px);
+        height: -moz-calc(110vh - 160px);
+        height: calc(110vh - 160px);
+        min-height: calc(110vh - 160px);
+      }
+
+      .inf{
+        height:70vh;
+        height:(90vh - 160px);
+        height:-webkit-calc(90vh - 160px);
+        height: -moz-calc(90vh - 160px);
+        height: calc(90vh - 160px);
+        min-height: calc(90vh - 160px);
+      }
+
+
+      #t1{ 
+          height:60vh;
+          height:-webkit-calc(70vh - 160px);
+          height: -moz-calc(70vh - 160px);
+          height: calc(70vh - 160px);
+       }
+      #t2{ 
+          height:70vh;
+          height:-webkit-calc(70vh - 160px);
+          height: -moz-calc(70vh - 160px);
+          height: calc(70vh - 160px);
+       }
+
+      #se.row{ padding-top:3%; }
+      #in.row{ padding-top:6%; }
+      #text{   height:200px;   }
+      #foot{   height:150px;    }
+
+      .map{
+          height: 100vh;
+          height: -webkit-calc(100vh - 160px);
+          height: -moz-calc(100vh - 160px);
+          height: -o-calc(100vh-160px); /* Opera */
+          position:relative;
+          background-size: 100% auto; 
+          background-repeat: no-repeat;
+          background-image: url("../img/mapP.png");
+      }
+   }

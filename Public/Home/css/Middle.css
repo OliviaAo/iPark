@@ -1,0 +1,205 @@
+ body{
+
+        text-align: center;
+        position:relative;
+     }
+     
+     .con{
+        width:100%;
+        text-align: center;
+        position:relative;
+        vertical-align: middle;
+        background-size: cover;
+        background-image: url("../img/bg2.jpeg");
+        background-repeat: no-repeat;
+        background-attachment:scroll;
+        background-size: 100% 100%;
+        -webkit-background-size:100% 100%;
+        -o-background-size:100% 100%; 
+        height: -webkit-calc(100vh - 160px);
+        height: -moz-calc(100vh - 160px);
+        height: -o-calc(100vh-160px) /* Opera */
+        height: calc(100vh - 160px);
+        min-height: calc(100vh - 160px);
+      }
+
+      .he{
+        position:relative;
+        filter:alpha(opacity=70); /* IE滤镜，透明度50% */
+        -moz-opacity:0.7;         /* Firefox私有，透明度50% */
+        opacity:0.7;              /* 其他，透明度50% */
+      }
+
+      #text{
+        margin-top: 5%;
+        position:relative;
+        width:100%;
+      }
+
+      #foot{
+        position:relative;
+        width:100%;
+        background-color: rgb(114,208,235);
+      }
+
+      li{
+        margin-top: 1%;
+        list-style-type:none; 
+        cursor:pointer; 
+        text-align:center; 
+      }
+
+      #act{
+        animation:myfirst 0.6s;
+        -moz-animation:myfirst 0.6s;    /* Firefox */
+        -webkit-animation:myfirst 0.6s; /* Safari and Chrome */
+        -o-animation:myfirst 0.6s;      /* Opera */
+      }
+
+      @keyframes myfirst
+      {
+        0%   {opacity: 0;}
+        25%  {opacity: 0.25;}
+        50%  {opacity: 0.5;}
+        75%  {opacity: 0.75;}
+        100% {opacity: 1;}
+      }      
+
+      @-moz-keyframes myfirst /* Firefox */
+      {
+         0%  {opacity: 0;}
+        25%  {opacity: 0.25;}
+        50%  {opacity: 0.5;}
+        75%  {opacity: 0.75;}
+        100% {opacity: 1;}
+      }      
+
+      @-webkit-keyframes myfirst /* Safari and Chrome */
+      {
+         0%   {opacity: 0;}
+        25%  {opacity: 0.25;}
+        50%  {opacity: 0.5;}
+        75%  {opacity: 0.75;}
+        100% {opacity: 1;}
+      }      
+
+      @-o-keyframes myfirst /* Opera */
+      {
+        0%   {opacity: 0;}
+        25%  {opacity: 0.25;}
+        50%  {opacity: 0.5;}
+        75%  {opacity: 0.75;}
+        100% {opacity: 1;}
+      }
+
+    /* 响应式: */
+    /* 超小屏幕 (手机)*/
+    @media screen and (max-width: 767px){
+
+      h1{ 
+        font-size:320%; 
+        padding-top:25%; 
+      }
+
+      h3{
+        font-size:150%;
+        font-weight:200;
+      }
+
+      .con{
+        height:-webkit-calc(60vh - 160px);
+        height: -moz-calc(60vh - 160px);
+        height: calc(60vh - 160px);
+        min-height: 300px
+      }
+
+      #se.row{ padding-top:8%; } 
+      #in.row{ padding-top:6%; }
+
+      #foot{   
+
+        height:220px; 
+        margin-top: 15%;   
+      }
+
+      #text{
+        font-size: 10px;
+        height:150px;
+      } 
+    }
+
+
+   /* 小屏幕（平板，大于等于 768px） */
+   @media screen and (min-width: 768px){ 
+
+      h1{ 
+        font-size:450%; 
+        padding-top:10%;
+      }
+
+      h3{
+        font-size:150%;
+        font-weight:200;
+      }
+
+      .con{
+        height:-webkit-calc(70vh - 160px);
+        height: -moz-calc(70vh - 160px);
+        height: calc(70vh - 160px);
+        min-height: 400px;
+      }
+
+      #se.row{  padding-top:5%; }
+      #in.row{  padding-top:6%; }
+      #text{    height:200px;   }
+      #foot{    height:270px;    }
+   }
+   
+   /* 中等屏幕（桌面显示器，大于等于 992px） */
+   @media screen and (min-width:992px){
+
+      h1{ 
+        font-size:600%; 
+      }
+
+      h3{
+        font-size:200%;
+        font-weight:200;
+      }
+
+      .con{
+        height:-webkit-calc(80vh - 160px);
+        height: -moz-calc(80vh - 160px);
+        height: calc(80vh - 160px);
+        min-height: 500px;
+      }
+
+      #se.row{ padding-top:5%; }
+      #in.row{ padding-top:6%; }
+      #text{   height:200px;   }
+      #foot{   height:110px;    }
+    }
+   
+
+   /* 大屏幕（大桌面显示器，大于等于 1200px） */
+   @media screen and (min-width: 1200px){
+
+      h1{ font-size:900%; }
+
+      h3{
+        
+        font-size:300%;
+        font-weight:200;
+      }
+      .con{
+        height:-webkit-calc(130vh - 160px);
+        height: -moz-calc(130vh - 160px);
+        height: calc(130vh - 160px);
+        min-height: 600px;
+      }
+
+      #se.row{ padding-top:3%; }
+      #in.row{ padding-top:6%; }
+      #text{   height:200px;   }
+      #foot{   height:150px;    }
+   }
